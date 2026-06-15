@@ -9,6 +9,9 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:linear-gradient(135deg,#2a0d10 0%,#411517 40%,#3a1215 100%);color:#F4EDE3;min-height:100vh}
 .header{background:linear-gradient(90deg,#411517,#5a1e22);padding:18px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid #FF5900;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+.header .nav{display:flex;gap:12px}
+.header .nav a{color:#F4EDE3;text-decoration:none;font-size:.85rem;padding:6px 16px;border-radius:6px;border:1px solid rgba(255,89,0,.3);transition:all .2s}
+.header .nav a:hover,.header .nav a.active{background:#FF5900;border-color:#FF5900;color:#fff}
 .header h1{font-size:1.6rem;font-weight:700;letter-spacing:.5px}
 .header h1 span{color:#FF5900}
 .header .sub{font-size:.85rem;color:#F4EDE3aa;margin-top:2px}
@@ -84,7 +87,14 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
 <body>
 <div class="header">
   <div><h1><span>Shrinkage</span> Report Dashboard 2026</h1><div class="sub">Inventory Shrinkage Analysis &mdash; AED Currency</div></div>
-  <div style="font-size:.78rem;color:#F4EDE3aa">Data Source: Google Sheets &bull; Updated Monthly</div>
+  <div style="display:flex;align-items:center;gap:20px">
+    <div style="font-size:.78rem;color:#F4EDE3aa">Data Source: Google Sheets &bull; Updated Monthly</div>
+    <div class="nav">
+      <a href="index.html" class="active">Shrinkage</a>
+      <a href="po-recon.html">PO Recon</a>
+      <a href="cn-grv.html">CN vs GRV</a>
+    </div>
+  </div>
 </div>
 
 <div class="filters">
