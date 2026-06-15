@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PO Receiving Reconciliation Dashboard</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#2a0d10;color:#F4EDE3;height:100vh;display:flex;flex-direction:column}
+.header{background:linear-gradient(90deg,#411517,#5a1e22);padding:14px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid #FF5900;box-shadow:0 4px 20px rgba(0,0,0,.4);flex-shrink:0}
+.header h1{font-size:1.4rem;font-weight:700;letter-spacing:.5px}
+.header h1 span{color:#FF5900}
+.header .nav{display:flex;gap:12px}
+.header .nav a{color:#F4EDE3;text-decoration:none;font-size:.85rem;padding:6px 16px;border-radius:6px;border:1px solid rgba(255,89,0,.3);transition:all .2s}
+.header .nav a:hover,.header .nav a.active{background:#FF5900;border-color:#FF5900;color:#fff}
+.frame-wrap{flex:1;padding:0}
+iframe{width:100%;height:100%;border:none}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>PO Receiving <span>Reconciliation</span></h1>
+  <div class="nav">
+    <a href="index.html">Shrinkage</a>
+    <a href="po-recon.html" class="active">PO Recon</a>
+    <a href="cn-grv.html">CN vs GRV</a>
+  </div>
+</div>
+<div class="frame-wrap">
+  <iframe src="https://script.google.com/a/macros/talabat.com/s/AKfycbyrvpC-miWKqtWp7sRTZ8D9b5hjcam8xjce-49hJAEc_LmVtn-R9U0Lt1_Os7eW6OeUsQ/exec" allowfullscreen></iframe>
+</div>
+</body>
+</html>
